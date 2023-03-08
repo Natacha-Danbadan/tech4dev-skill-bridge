@@ -50,7 +50,7 @@ const Newsletter = () => {
 
     return (
         <section className="w-full px-7 md:px-14 lg:px-16 xl:px-24 xxl:px-[120px]">
-            <form onSubmit={(e) => handleSubmit(e)}
+            <form onSubmit={(e) => handleSubmit(e)} method="POST"
                 className="w-full bg-deepBlue flex flex-col lg:flex-row gap-14 pt-[5rem] pb-[4.5rem]
                 px-7 md:px-14 lg:px-16 xxl:px-20 lg:items-stretch"
             >
