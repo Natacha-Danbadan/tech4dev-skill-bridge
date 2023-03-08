@@ -24,8 +24,8 @@ const Button = (props) => {
 
     if (href) {
         return (
-            <Link to={href}>
-                <div className={`${background} ${border} ${borderColor} ${textColor} ${width} ${paddingY} 
+            <Link to={href} className={`${width}`}>
+                <div className={`${background} ${border} ${borderColor} ${textColor} w-full ${paddingY} 
                     px-6 text-[20px] leading-[24px] font-medium font-roboto rounded-lg outline-none gap-2
                     active:scale-[98%] hover:scale-[101%] focus:scale-[102%] no-underline text-center flex
                     items-center justify-center`}
