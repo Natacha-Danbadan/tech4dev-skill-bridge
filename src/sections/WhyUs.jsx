@@ -31,13 +31,13 @@ const WhyUs = () => {
     return (
         <section className="w-full px-7 md:px-14 lg:px-16 xl:px-24 xxl:px-[120px] bg-white my-[120px]">
             <div className="w-full">
-                <h2 className="font-calisto font-bold text-[40px] leading-[64px] text-center">
+                <h2 className="font-calisto font-bold text-[2.5rem] leading-[4rem] text-center">
                     Why <span className="text-blue"> SkillBridge?</span>
                 </h2>
                 <p className="font-roboto font-medium text-xl leading-[140%] text-center mb-9">
                     Keeping track of your ecommerce transactions has never been easier
                 </p>
-                <div className="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div className="w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8">
                     <WhyUsBox whyUsBoxProps={ box1 } />
                     <WhyUsBox whyUsBoxProps={ box2 } />
                     <WhyUsBox whyUsBoxProps={ box3 } />

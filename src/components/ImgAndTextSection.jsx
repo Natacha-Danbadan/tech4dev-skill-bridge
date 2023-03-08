@@ -21,10 +21,10 @@ const ImgAndTextSection = (props) => {
             <div className="w-full flex-grow">
                 { regularText ? (
                     <div>
-                        <h2 className="font-calisto font-bold text-5xl leading-[57px] text-blue text-justify mb-3">
+                        <h2 className="font-calisto font-bold text-5xl leading-[3.5625rem] text-blue text-justify mb-3">
                             { title }
                         </h2>
-                        <p className="font-roboto text-2xl leading-[34px] text-dark text-justify">
+                        <p className="font-roboto text-2xl leading-[2.125rem] text-dark text-justify">
                             { text }
                         </p>
                     </div>

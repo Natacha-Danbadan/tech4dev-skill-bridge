@@ -33,11 +33,11 @@ const Header = () => {
             flex justify-between items-center relative"
         >
             <Link to="/">
-                <p className="font-gabriela text-[32px] leading-[41px] text-blue">SkillBridge</p>
+                <p className="font-gabriela text-[2rem] leading-[2.5625rem] text-blue">SkillBridge</p>
             </Link>
 
             <nav className="hidden lg:block">
-                <ul className="list-style-none flex gap-10 font-roboto font-medium text-xl leading-[24px]">
+                <ul className="list-style-none flex gap-10 font-roboto font-medium text-xl leading-[1.5rem]">
                     <li>
                         <Link to="/">
                             <p className="text-dark">Home</p>
@@ -58,7 +58,7 @@ const Header = () => {
 
             <div className="hidden lg:flex gap-6 items-center">
                 <Link to="/login">
-                    <p className="font-roboto text-blue font-medium text-xl leading-[24px] hover:underline">Log In</p>
+                    <p className="font-roboto text-blue font-medium text-[20px] leading-[24px] hover:underline">Log In</p>
                 </Link>
                 <Button buttonProps={buttonProps} />
             </div>

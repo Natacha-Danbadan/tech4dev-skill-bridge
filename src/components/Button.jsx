@@ -23,19 +23,24 @@ const Button = (props) => {
 
     if (href) {
         return (
-            <Link to={href} className={`${background} ${border} ${borderColor} ${textColor} ${width}
-                ${paddingY} px-6 text-xl leading-[24px] font-medium font-roboto rounded-lg outline-none
-                active:scale-[98%] hover:scale-[101%] focus:scale-[102%] no-underline text-center`}
-            >
-                <p>{ text }</p>
+            <Link to={href}>
+                <div className={`${background} ${border} ${borderColor} ${textColor} ${width} ${paddingY} 
+                    px-6 text-[20px] leading-[24px] font-medium font-roboto rounded-lg outline-none gap-2
+                    active:scale-[98%] hover:scale-[101%] focus:scale-[102%] no-underline text-center flex
+                    items-center justify-center`}
+                >
+                    <p>{ text }</p>
+                    { props.children ? props.children : null }
+                </div>
             </Link>
         )
     }
 
     return (
         <button type={type} onClick={handleClick} className={`${background} ${border} ${borderColor} ${textColor} 
-            ${width} ${paddingY} px-6 text-xl leading-[24px] font-medium font-roboto rounded-lg outline-none
-            active:scale-[98%] hover:scale-[101%] focus:scale-[101%] flex justify-center`}
+            ${width} ${paddingY} px-6 text-[20px] leading-[24px] font-medium font-roboto rounded-lg outline-none
+            active:scale-[98%] hover:scale-[101%] focus:scale-[101%] flex justify-center gap-2 items-center
+            flex-grow flex-shrink-0`}
         >
             <p>{ text }</p>
             { props.children ? props.children : null }

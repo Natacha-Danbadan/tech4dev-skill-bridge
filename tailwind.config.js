@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./src/**/*.{js,jsx,ts,tsx}"],
+  content: ["./src/**/*.{js,jsx,ts,tsx}", "./public/index.html"],
   theme: {
     screens: {
       "sm": "576px",
@@ -10,6 +10,9 @@ module.exports = {
       "xxl": "1440px",
     },
     extend: {
+      spacing: {
+        noPage: "calc(100vh - 124px)"
+      },
       colors: {
         blue: "#130FEA",
         deepBlue: "#16156D",

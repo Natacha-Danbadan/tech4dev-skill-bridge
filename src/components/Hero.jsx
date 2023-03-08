@@ -40,7 +40,7 @@ const Hero = () => {
         >
             <div className="w-full lg:w-[690px] flex-shrink flex items-center mt-10 lg:mt-0">
                 <div className="w-full">
-                    <h1 className="font-calisto font-bold text-[60px] leading-[71px] text-black lg:text-justify mb-5 lg:mb-0">
+                    <h1 className="font-calisto font-bold text-[3.75rem] leading-[4.5rem] text-black lg:text-justify mb-5 lg:mb-0">
                         {/* Find the Perfect Skilled Artisans for your Business */}
                         Find the Perfect <span className="text-blue">Skilled Artisans </span> for your 
                         <span className="text-blue"> Business</span>
@@ -50,11 +50,11 @@ const Hero = () => {
                         Hire the best Artisans near you
                     </p>
                     <div className="flex gap-9 items-center mt-6">
-                        <div className="w-[290px] flex">
+                        <div className="w-full flex-shrink lg:flex-shrink-0 md:w-[290px] flex">
                             <Button buttonProps={buttonProps} />
                         </div>
-                        <Link to="/login">
-                            <p className="font-roboto text-blue font-medium text-xl leading-[24px] hover:underline">Log In</p>
+                        <Link to="/login" className="w-fit flex-none">
+                            <p className="font-roboto text-blue font-medium text-[20px] leading-[24px] hover:underline">Log In</p>
                         </Link>
                     </div>
                 </div>
