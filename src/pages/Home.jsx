@@ -5,6 +5,7 @@ import Clubs from "../sections/Clubs"
 import AboutUs from "../sections/AboutUs"
 import ErrorBoundary from "../components/ErrorBoundary"
 import Reviews from "../sections/Reviews"
+import Newsletter from "../sections/Newsletter"
 
 const Home = () => {
     return (
@@ -20,6 +21,9 @@ const Home = () => {
             </ErrorBoundary>
             <ErrorBoundary>
                 <AboutUs />
+            </ErrorBoundary>
+            <ErrorBoundary>
+                <Newsletter />
             </ErrorBoundary>
             <ErrorBoundary>
                 <Reviews />

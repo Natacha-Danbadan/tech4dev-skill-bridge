@@ -18,7 +18,7 @@ const businessProps = {
 const AboutUs = () => {
 
     return (
-        <section className="w-full flex flex-col gap-[6.875rem] py-10">
+        <section className="w-full flex flex-col gap-[6.875rem] py-10 mb-[6.5rem]">
             <ErrorBoundary>
                 <ImgAndTextSection imgTextProps={ artisanProps } />
             </ErrorBoundary>

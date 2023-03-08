@@ -9,7 +9,6 @@ const Hero = () => {
     const [screenWidth, setScreenWidth] = useState(0)
 
     const updateScreenWidth = () => setScreenWidth(window.innerWidth)
-    console.log(positionRight)
     useEffect(() => {
         window.addEventListener("resize", updateScreenWidth)
         return () => window.removeEventListener("resize", updateScreenWidth)

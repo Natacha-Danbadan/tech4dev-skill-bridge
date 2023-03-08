@@ -1,5 +1,6 @@
 import { BsStarFill, BsStarHalf, BsStar } from "react-icons/bs"
 import helpers from "../helpers"
+import uuid from "react-uuid"
 
 const ReviewStars = ({ rating }) => {
     const starArr = helpers.getStarArr(rating)
@@ -10,11 +11,11 @@ const ReviewStars = ({ rating }) => {
                 let element = <></>
 
                 if (num === 1) {
-                    element = <BsStarFill className="text-[20px] leading-[20px] text-gold" />
+                    element = <BsStarFill key={ uuid() } className="text-[20px] leading-[20px] text-gold" />
                 } else if (num === 0.5) {
-                    element = <BsStarHalf className="text-[20px] leading-[20px] text-gold" />
+                    element = <BsStarHalf key={ uuid() } className="text-[20px] leading-[20px] text-gold" />
                 } else if (num === 0) {
-                    element = <BsStar className="text-[20px] leading-[20px] text-gold" />
+                    element = <BsStar key={ uuid() } className="text-[20px] leading-[20px] text-gold" />
                 }
 
                 return element

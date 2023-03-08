@@ -11,7 +11,8 @@ const Button = (props) => {
         text = "",
         wid = "full",
         py = "sm",
-        handleClick = () => {}
+        handleClick = () => {},
+        // handleSubmit = () => {}
     } = props.buttonProps
 
     const background = bg === "blue" ? "bg-blue" : "bg-white"
@@ -36,11 +37,25 @@ const Button = (props) => {
         )
     }
 
+    if (type === "submit") {
+        return (
+            <button type={type} 
+                // onSubmit={ (e) => handleSubmit(e) }
+                className={`${background} ${border} ${borderColor} ${textColor} ${width} ${paddingY} px-6 
+                text-[20px] leading-[24px] font-medium font-roboto rounded-lg outline-none active:scale-[98%] 
+                hover:scale-[101%] focus:scale-[101%] flex justify-center gap-2 items-center flex-grow flex-shrink-0`}
+            >
+                <p>{ text }</p>
+                { props.children ? props.children : null }
+            </button>
+        )
+    }
+
     return (
-        <button type={type} onClick={handleClick} className={`${background} ${border} ${borderColor} ${textColor} 
-            ${width} ${paddingY} px-6 text-[20px] leading-[24px] font-medium font-roboto rounded-lg outline-none
-            active:scale-[98%] hover:scale-[101%] focus:scale-[101%] flex justify-center gap-2 items-center
-            flex-grow flex-shrink-0`}
+        <button type={type} onClick={ handleClick }
+            className={`${background} ${border} ${borderColor} ${textColor} ${width} ${paddingY} px-6 
+            text-[20px] leading-[24px] font-medium font-roboto rounded-lg outline-none active:scale-[98%] 
+            hover:scale-[101%] focus:scale-[101%] flex justify-center gap-2 items-center flex-grow flex-shrink-0`}
         >
             <p>{ text }</p>
             { props.children ? props.children : null }

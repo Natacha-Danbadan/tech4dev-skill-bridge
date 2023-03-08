@@ -20,6 +20,7 @@ module.exports = {
         neutralBlue: "#D5D6DE",
         textWhite: "#FAFAFB",
         textWhite60: "#FAFAFB60",
+        textWhite90: "#FAFAFB99",
         dark: "#131418",
         dark70: "#13141870",
         grey: "#4B4E61",
