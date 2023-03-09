@@ -1,7 +1,9 @@
 import getStarArr from "./getStarArr";
+import createOrderObj from "./createOrderObj";
 
 const helpers = {
-    getStarArr
+    getStarArr,
+    createOrderObj
 }
 
 export default helpers

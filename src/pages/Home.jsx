@@ -6,6 +6,7 @@ import AboutUs from "../sections/AboutUs"
 import ErrorBoundary from "../components/ErrorBoundary"
 import Reviews from "../sections/Reviews"
 import Newsletter from "../sections/Newsletter"
+import Professions from "../sections/Professions"
 
 const Home = () => {
     return (
@@ -18,6 +19,9 @@ const Home = () => {
             </ErrorBoundary>
             <ErrorBoundary>
                 <WhyUs />
+            </ErrorBoundary>
+            <ErrorBoundary>
+                <Professions />
             </ErrorBoundary>
             <ErrorBoundary>
                 <AboutUs />
